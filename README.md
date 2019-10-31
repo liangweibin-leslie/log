@@ -1,2 +1,4 @@
-# log
-everyday-study log
+# 学习笔记
+
+
+记录自己每天的学习进度
