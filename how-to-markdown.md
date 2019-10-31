@@ -1,7 +1,8 @@
-#how-to-markdown学习
+# how-to-markdown学习
 
 王顶老师课程20191031
-###开源项目简介 
+
+### 开源项目简介 
 * 语言角度
 
 例Workshopper组织下有多个项目，每个项目介绍里会着重一种语言，如html或者javascript
