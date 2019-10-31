@@ -1,0 +1,2 @@
+# log
+everyday-study log
