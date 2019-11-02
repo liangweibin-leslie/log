@@ -12,9 +12,16 @@
 	               free:显示内存使用情况；加上-h：human代表人类可读的格式
 	               exit:退出当前连接
 ### 2、文件系统中跳转
-	+ pwd
-	+ 
-	+
++ pwd
+	
+	print working directory:打印当前工作路径
++ ls
+	
+	list:后面加目录可以查看此目录下的所有文件
++ cd
+
+	change directory:切换目录
+	
 	
 	
 	
