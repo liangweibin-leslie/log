@@ -82,7 +82,49 @@ less:对文件或其他输出进行**分页显示**的工具，是linux正统查
 ls l- / ---->显示linux根目录
 + bin:命令文件目录,包含了供管理员和普通用户使用的重要的linux命令和二进制可执行文件 -->/usr/nin
 + boot:存放系统的内核文件及引导装载程序文件
-+ 
++ dev:设备文件目录，存放linux系统下的设备文件，访问该目录下文件，相当于访问某个设备
++ etc:存放系统配置文件
++ home:用户的家目录，新建用户时，该用户的宿主目录存放在这里
++ lib  lib64:系统使用的函数库的目录，相当于windows的dll文件库
++ media ：自动挂载的目录，如U盘插入会自动挂载，会在/media目录下生成一个目录
++ mnt :被系统管理员使用，手动挂载一些临时媒体设备的目录
++ opt :存放安装系统后用户安装的可选的应用软件
++ proc :系统进程目录
++ root :root用户的家目录
++ run :?
++ srv :服务启动后需要访问的数据目录，如www服务需要访问的网页数据存放在/srv/www内
++ tmp :临时存放文件的目录，任何人都可以访问，重要文件不存放在此目录
++ sys :?
++ usr :应用程序存放目录
++ var :存放系统执行过程中经常变化的文件，如/var/log
+### 4、操作文件和目录
+wildchar:通配符
+* ‘*’ ：0，1，more char
+* ?   : 1 char
+* [character] :one char in set
+* [!character]:not one char in set
+* [[:class:]]:one char in class 
+ + [:digit:]:number
+ + [:lower:]:lower char
+ + [:upper:]:upper char
+ + [:alnum:]:num+alpha
+ + [:alpha:]:lower and upper
+#### 4.1 mkdir
+ mkdir:make directory 创建目录
+ 
+ 语法：mkdir dir1  或者mkdir dir1 dir2 dir3
+#### 4.2 cp
+ cp:copy  复制
+ 
+ 语法：cp item1 item2   复制文件item1到目录item2
+ 
+      cp item1... item2   复制item1..等文件到目录item1
+      
+参数：
+* -a:--archive 
+ 
+ 
+
 
 	
 	
