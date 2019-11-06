@@ -121,8 +121,46 @@ wildchar:通配符
       cp item1... item2   复制item1..等文件到目录item1
       
 参数：
-* -a:--archive 
- 
+* -a:--archive
+* -i:--intercative   交互式的，若目标文件已存在，复制时会询问是否覆盖
+* -r:--reccursive    递归
+* -u:--update        更新
+* -v:--verbose       显示详细信息
+#### 4.3 mv
+mv:move  移动/重命名文件
+
+语法：mv item1 item2   重命名        mv item1... directory 移动item1...到目录directory
+* -i:intercative  交互式
+* -r:递归
+* -v:显示详细信息
+#### 4.4 rm
+rm:remove  删除文件或者目录 
+
+语法：rm item1...删除一个或多个文件或目录
+* -f:force 忽略不存在的文件，不出现警告信息
+* -i:交互式的
+* -v:显示详细信息
+* -r：递归删除
+* -rf:删除目录
+
+注：linux和windows不同，没有回收站之类的机制，linux系统删除不可恢复；例rm * .html
+#### 4.5 ln
+ln:link 链接
+
+语法：ln file link :create hard link创建硬链接
+      ln -s item link :create symbol link创建符合链接/软链接
+what is hard link?   what is symbol link?
+
+* 硬链接：只能对文件，不能对文件夹；ls-li值相同；删除时需要把所有链接删除才行
+* 符号链接：不仅能对文件，还可以对文件夹；原文件被删除时，符号链接失效
+### 5、使用命令
+command :
++ execute binary  二进制可执行程序
++ buildin bash 系统内置的bash命令
++ shell function shell函数
++ alias 别名
+####七个命令
+* type 
  
 
 
