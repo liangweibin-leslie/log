@@ -160,8 +160,29 @@ command :
 + shell function shell函数
 + alias 别名
 ####七个命令
-* type 
- 
+* type 显示命令类型的信息
+* which 显示命令的所在路径
+* help 显示内嵌命令的相关信息
+* man manual:用户手册，比help命令详细
+* apropos:在whatis数据库中查找字符串；apropos keword equal to man -k keyword
+* whatis :查看命令的简要说明
+* info：information :man命令的替代物;n:next node p:preview node u:up q:quit 
+enter:jump to link space:pagedown
+* alias:设置命令别名  alias name='command string'  alias:list alias command  unalias name 
+删除别名
+### I/O重定向
+redirection:重定向
+* stdout:standard out device 标准输出
+* stderr:standard error device 标准错误输出
+* stdin:standard input device 标准输入
++ redirect standard output:语法command > filename命令输出到filename文件中
+command >> filename追加输出到filename文件中
+
+stdin:0   stdout:1 stderr:2
+command > filename 2>&1  同时正常输出重定向和错误重定向
+command &> filename 和上面的命令等价
+无用信息重定向：useless message :/dev/null类似于垃圾桶
+
 
 
 	
