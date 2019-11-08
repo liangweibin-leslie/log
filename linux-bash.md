@@ -143,7 +143,7 @@ rm:remove  删除文件或者目录
 * -r：递归删除
 * -rf:删除目录
 
-注：linux和windows不同，没有回收站之类的机制，linux系统删除不可恢复；例rm * .html
+注：linux和windows不同，没有回收站之类的机制，linux系统删除不可恢复；例rm * .html，多空格会先把所有文件删掉，提示没有.html文件
 #### 4.5 ln
 ln:link 链接
 
@@ -154,12 +154,12 @@ what is hard link?   what is symbol link?
 * 硬链接：只能对文件，不能对文件夹；ls-li值相同；删除时需要把所有链接删除才行
 * 符号链接：不仅能对文件，还可以对文件夹；原文件被删除时，符号链接失效
 ### 5、使用命令
-command :
+command分类 :
 + execute binary  二进制可执行程序
 + buildin bash 系统内置的bash命令
 + shell function shell函数
 + alias 别名
-####七个命令
+####七个常用命令
 * type 显示命令类型的信息
 * which 显示命令的所在路径
 * help 显示内嵌命令的相关信息
