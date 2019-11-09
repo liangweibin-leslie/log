@@ -172,9 +172,9 @@ enter:jump to link space:pagedown
 删除别名
 ### I/O重定向
 redirection:重定向
-* stdout:standard out device 标准输出
-* stderr:standard error device 标准错误输出
-* stdin:standard input device 标准输入
+* stdout:standard out device 标准输出,指令执行所回传的正确的讯息；代码1
+* stderr:standard error device 标准错误输出，指令执行失败后，回传的错误信息；代码2
+* stdin:standard input device 标准输入；代码0
 + redirect standard output:语法command > filename命令输出到filename文件中
 command >> filename追加输出到filename文件中
 
