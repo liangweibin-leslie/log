@@ -170,7 +170,7 @@ command分类 :
 enter:jump to link space:pagedown
 * alias:设置命令别名  alias name='command string'  alias:list alias command  unalias name 
 删除别名
-### I/O重定向
+### 6、I/O重定向
 redirection:重定向
 * stdout:standard out device 标准输出,指令执行所回传的正确的讯息；代码1
 * stderr:standard error device 标准错误输出，指令执行失败后，回传的错误信息；代码2
@@ -182,6 +182,40 @@ stdin:0   stdout:1 stderr:2
 command > filename 2>&1  同时正常输出重定向和错误重定向
 command &> filename 和上面的命令等价
 无用信息重定向：useless message :/dev/null类似于垃圾桶
+
+cat命令：cat [file] 文本输出命令，用于观看某个文件的内容
+
+cat常用于显示内容较少的文件，因为它不支持翻页；后面可接多个文件，也用于多个文件的合并
+cat movie.mpeg.0* > movie.mpeg和重定向结合，把多个文件合并。
+
+cat后面不加任何文件回车，会让用户输入，再按回车显示输入的内容，ctrl+D结束输入后
+
+cat > filename 回车后用户输入，ctrl+D结束输入，输入的内容会显示到filename文件中
+#### 管道线 |
+command | command 例：ls -l /usr/bin | less
+#### filter 过滤器
+* sort 排序
+* uniq 和sort结合使用，排序后去掉重复数据  -d选项：
+* wc word count  line/word/byte
+* grep 搜索  语法：grep pattern [file]  grep -i:ignore caption搜索时忽略大小写
+* head/tail 头/尾部   默认打印10行    head -n 5:前面5行==head -5
+* tee stdin/stdout  从标准输入到标准输出的桥梁作用
+### 7、Shell眼中看世界
+#### echo命令：打印一行文本
+echo string:按回车后打印字符串string  例：echo this is linux
+#### expansion  展开
+* character expansion字符展开：   例:echo * 输出当前目录文件
+* pathname expansion路径名称展开：例：echo l*   echo *.txt echo .[!.]*
+* tilde expansion波浪线展开：echo ~等同于pwd
+* arithmetic expansion算数运算展开：语法$((expression));双括号中间是表达式；支持的运算
+加+ 减- 乘* 除/ 幂** %取模；且运算中不支持小数
+
+	例：echo $((2+2))
+* brace expansion花括号展开：例：echo Number{1..5}  echo a{A{1,2},B{3,4}}b
+* parameter expansion参数展开：echo $USER   printenv:显示所有环境变量
+* command substitution命令替换：语法$(command)
+
+
 
 
 
