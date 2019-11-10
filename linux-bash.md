@@ -214,7 +214,23 @@ echo string:按回车后打印字符串string  例：echo this is linux
 * brace expansion花括号展开：例：echo Number{1..5}  echo a{A{1,2},B{3,4}}b
 * parameter expansion参数展开：echo $USER   printenv:显示所有环境变量
 * command substitution命令替换：语法$(command)
+* quoting:引用  double quotes"" 单引号   single quotes''双引号
+* escaping character转义符
+### 高级键盘操作技巧
+#### clear:清空屏幕
+#### move cursor移动光标
+ * Ctrl+a:移动到行首
+ * Ctrl+e:移动到行尾
+ * Ctrl+f:向前移动一个字符forward
+ * Ctrl+b:向后移动一个字符 backward
+ * Alt+f:向前移动一个单词
+ * Alt+b:向后移动一个单词
+ * Ctrl+l:清空屏幕，等同于clear
+#### modify text
+#### copy&paste text
 
+#### history:显示命令历史
+### 权限管理
 
 
 
