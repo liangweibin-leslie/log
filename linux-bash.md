@@ -168,7 +168,7 @@ command分类 :
 * whatis :查看命令的简要说明
 * info：information :man命令的替代物;n:next node p:preview node u:up q:quit 
 enter:jump to link space:pagedown
-* alias:设置命令别名  alias name='command string'  alias:list alias command  unalias name 
+* alias:设置命令别名  alias name='command string'  alias:list alias command  取消别名：unalias name 
 删除别名
 ### 6、I/O重定向
 redirection:重定向
@@ -231,8 +231,14 @@ echo string:按回车后打印字符串string  例：echo this is linux
 
 #### history:显示命令历史
 ### 权限管理
-
-
+owner:所有者  group:所在组  other:其他用户
+* id 显示当前操作用户  uid: user id  gid:group id
+* 几个目录：/etc/passwd :user account /etc/group:group info /etc/shadow:passward
+* 三种权限：r--read读   w--write写  x--excute执行;三种权限对文件和目录的不同意义
+* chmod:change mode改变权限  语法：chmod 权限 filename/dirname
+ + oct rwx---7   r-x---5;例：chmod 600 filename
+ + sym:+/-/=   u/g/o/a:user---group---other---all 例：chmod gu+r filename
+ 
 
 
 	
