@@ -230,7 +230,7 @@ echo string:按回车后打印字符串string  例：echo this is linux
 #### copy&paste text
 
 #### history:显示命令历史
-### 权限管理
+### 权限管理（linux多用户特性）
 owner:所有者  group:所在组  other:其他用户
 * id 显示当前操作用户  uid: user id  gid:group id
 * 几个目录：/etc/passwd :user account /etc/group:group info /etc/shadow:passward
@@ -238,7 +238,25 @@ owner:所有者  group:所在组  other:其他用户
 * chmod:change mode改变权限  语法：chmod 权限 filename/dirname
  + oct rwx---7   r-x---5;例：chmod 600 filename
  + sym:+/-/=   u/g/o/a:user---group---other---all 例：chmod gu+r filename
- 
+* umask:登陆系统后创建文件的默认权限(掩码的形式表现)
+### 进程管理（linux多任务特性）
+#### ps:process查看进程
+* PID:process id进程ID
+* TTY:teletype进程终端
+* TIME:time进程执行消耗CPU的时间
+* CMD：command该进程执行的命令
+* STAT：status状态
+* VSZ:vitual memory虚拟内存
+* RSS:phiscal memory物理内存
+* ps aux
+* ps x:
+#### top:summary摘要信息+detail info具体信息
+#### vim
+:q! 退出exit    :!bash:goto bash跳出vim到bash;此时vim进程在后台运行，输exit回到vim
+#### top&:后台运行top
+#### fg:frontground  语法;先vim&   在fg %1 再回到vim;;同样的还有background
+
+
 
 
 	
