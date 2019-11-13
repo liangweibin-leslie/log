@@ -251,10 +251,14 @@ owner:所有者  group:所在组  other:其他用户
 * ps aux
 * ps x:
 #### top:summary摘要信息+detail info具体信息
-#### vim
+#### vim   ctrl+z 结束进程  ctrl+c
 :q! 退出exit    :!bash:goto bash跳出vim到bash;此时vim进程在后台运行，输exit回到vim
 #### top&:后台运行top
 #### fg:frontground  语法;先vim&   在fg %1 再回到vim;;同样的还有background
+#### kill:send signal
+
+#### shutdown -h now关机  shutdown -r now重启
+### Shell
 
 
 
