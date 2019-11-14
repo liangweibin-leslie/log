@@ -216,7 +216,7 @@ echo string:按回车后打印字符串string  例：echo this is linux
 * command substitution命令替换：语法$(command)
 * quoting:引用  double quotes"" 单引号   single quotes''双引号
 * escaping character转义符
-### 高级键盘操作技巧
+### 8、高级键盘操作技巧
 #### clear:清空屏幕
 #### move cursor移动光标
  * Ctrl+a:移动到行首
@@ -230,7 +230,7 @@ echo string:按回车后打印字符串string  例：echo this is linux
 #### copy&paste text
 
 #### history:显示命令历史
-### 权限管理（linux多用户特性）
+### 9、权限管理（linux多用户特性）
 owner:所有者  group:所在组  other:其他用户
 * id 显示当前操作用户  uid: user id  gid:group id
 * 几个目录：/etc/passwd :user account /etc/group:group info /etc/shadow:passward
@@ -239,7 +239,7 @@ owner:所有者  group:所在组  other:其他用户
  + oct rwx---7   r-x---5;例：chmod 600 filename
  + sym:+/-/=   u/g/o/a:user---group---other---all 例：chmod gu+r filename
 * umask:登陆系统后创建文件的默认权限(掩码的形式表现)
-### 进程管理（linux多任务特性）
+### 10、进程管理（linux多任务特性）
 #### ps:process查看进程
 * PID:process id进程ID
 * TTY:teletype进程终端
@@ -258,8 +258,13 @@ owner:所有者  group:所在组  other:其他用户
 #### kill:send signal
 
 #### shutdown -h now关机  shutdown -r now重启
-### Shell
-
+### 11、Shell
+* printenv:print env打印环境变量（只用来显示环境变量）
+* printenv USER:只打印USER环境变量
+* set print shell var and env var:set既可以打印shell变量，也可以打印环境变量
+* customize own shell:定义自己的环境变量
+* vi .bashrc:编辑.bashrc文件，在文件末尾加：alias la='ls -al'加入别名；source .bashrc使别名生效
+### 12、vi编辑器
 
 
 
