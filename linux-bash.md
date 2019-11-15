@@ -265,7 +265,24 @@ owner:所有者  group:所在组  other:其他用户
 * customize own shell:定义自己的环境变量
 * vi .bashrc:编辑.bashrc文件，在文件末尾加：alias la='ls -al'加入别名；source .bashrc使别名生效
 ### 12、vi编辑器
+1、很多版本默认安装vi 1、易操作
+vi:visual----vim:vi improved 
+edit model:编辑模式  normal/insert   
 
+### 13、自定义Shell提示符
+### 14、软件包管理
+ common package management task:常用软件包管理任务
+ * yum search package 
+ * yum list:列出所有的软件包，包括未安装的   yum list installed:只列出安装过的
+ * yum list package:例yum list git
+ * yum install git:从软件库中安装git **前面加sudo**
+ * yum erase git:卸载git,sudo
+ * yum update git:安装更新   yum list updates
+ * yum info git:显示安装包的信息（已安装/可安装）
+### 15、存储媒介
+/etc/fstab:file system table
+
+ 
 
 
 	
