@@ -268,9 +268,9 @@ owner:所有者  group:所在组  other:其他用户
 1、很多版本默认安装vi 1、易操作
 vi:visual----vim:vi improved 
 edit model:编辑模式  normal/insert   
-
+v
 ### 13、自定义Shell提示符
-### 14、软件包管理
+### 14、软件包管理yum
  common package management task:常用软件包管理任务
  * yum search package 
  * yum list:列出所有的软件包，包括未安装的   yum list installed:只列出安装过的
