@@ -281,6 +281,15 @@ v
  * yum info git:显示安装包的信息（已安装/可安装）
 ### 15、存储媒介
 /etc/fstab:file system table
+* mount - 挂载一个文件系统；单独使用mount命令，显示当前挂载点
+  sudo mount /dev/cdrom /mnt/cdrom:将光盘挂载到/mnt/cdrom;系统安装包中Packages中都有rpm软件包
+* umount - 卸载一个文件系统
+  sudo umount /mnt/cdrom
+* local yum repos - 本地yum源  /etc/yum.repos.d/
+ + CentOS-Base.repo:定义互联网上的yum源
+ + CentOS-Media.repo：定义本地的yum源
+ + sudo yum --disablerepo=\* --enablerepo=c7-media install git:使用本地yum源安装git
+ 
 
  
 
